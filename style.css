@@ -297,6 +297,7 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #1db954;
+    cursor: pointer;
 }
 .contact-right form{
     width: 100%;
@@ -317,7 +318,7 @@ form btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
-    cursor:pointer;
+
 }
 
 /*--------css for small screen--------------*/
