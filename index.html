@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leeya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61ab4246c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class = container>
+        <nav>
+            <img src = "images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm <span>Leeya</span> </h1>
+            <p>Senior Computer Science Major <br> Business Administration Minor</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-----------------About------------------!>
+
+<div id="about">
+    <div class="container">
+        <div class ="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello my name is Leeya Thercy, and I am from Ridgeland, Ms. <br> I love my black lab,Shadow, and I love music!
+                    Paramore is my favorite band of all time. I work hard and I have an endless supply of dad jokes. These headshots are AI generated, so excuse the uncanniness. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Projects</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>JavaScript </span><br> Along with HTML & CSS,
+                            I am able <br> to design Web/App interfaces</li>
+                        <li><span>Python </span><br>Data Analysis & Complex Problem Solving</li>
+                        <li><span>C/C++</span><br>Data Analysis & Complex Problem Solving</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2020</span><br>University of Southern Ms</li>
+                        <li><span>2020-2023</span><br>Mississippi State University <br>3.2 GPA</li>
+                        <li><span>December 2023</span><br>Graduation Date</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>This Portfolio</span><br>For this portfolio, I used JavaScript, HTML and CSS </li>
+                        <li><span>E-Commerce Store</span><br> worked closely with a team to build a Python program that functioned as an online furniture store.</li>
+                        <li><span>2023</span><br>Please Hire Me</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-----------------Services-----------------!>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Description Coming Soon!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p> Description Coming Soon!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p> Description Coming Soon!</p>
+                <a href="#">Learn More</a>
+            </div>
+    </div>
+</div>
+
+
+<!-------------portfolio-------------!>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Coming Soon! <br> For now, some extra words to fill the space.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Coming Soon! <br> For now, some extra words to fill the space.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Store</h3>
+                    <p>Coming Soon! <br> For now, some extra words to fill the space.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/leeyat1" class="btn">See More</a>
+    </div>
+</div>
+
+<!--------------contact---------------!>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>  LeeyaThercy1@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>  (769)-230-6112</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/leeyathercy/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/leeyat1"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/Leeya'sResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSRz23B6tBn_Y-WivQhYmOpQ15_Mjq3G8k4O4VBkP5WrVcJwWBrK0MOSeLLpHQrPTrbw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</html>
