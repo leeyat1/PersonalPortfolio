@@ -5,6 +5,7 @@
     <title>Leeya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/61ab4246c2.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 <div id="header">
@@ -22,7 +23,7 @@
         </nav>
         <div style="line-height: 160%;" class="header-text">
             <h1>Hello, I'm <span>Leeya</span> </h1>
-            <p>Computer Science Major <br>  
+            <p>Computer Science Major <br>
                 Business Administration Minor <br> 
                 Senior at Mississippi State University <br>
                 I aspire to use technology to create a <br> more positive and impactful change in the world <br>
@@ -37,7 +38,7 @@
 
 <!-----------------About------------------!>
 
-<div id="about">
+<div id="about1">
     <div class="container">
         <div class ="row">
             <div class="about-col-1">
@@ -52,11 +53,19 @@
                     enjoy turning challenges into solutions.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2019-2020</span><br>University of Southern Mississippi</li>
+                        <li><span>2020-December 2023</span><br>Mississippi State University <br>GPA 3.27/4</li>
+                        <li><span>2023</span><br>Dean's List</li>
+                        
+                    </ul>
                 </div>
                 
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents" id="skills">
                     <ul>
                         <li><span>Python </span><br>Data Analysis & Complex Problem Solving</li>
                         <li><span>Object Oriented Programming </span><br>Organizing Code for Maximum Reusability</li>
@@ -67,14 +76,7 @@
         
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019-2020</span><br>University of Southern Mississippi</li>
-                        <li><span>2020-December 2023</span><br>Mississippi State University <br>GPA 3.27/4</li>
-                        <li><span>2023</span><br>Dean's List</li>
-                        
-                    </ul>
-                </div>
+                
         </div>
     </div>
 </div>
