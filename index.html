@@ -1,158 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Leeya's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/61ab4246c2.js" crossorigin="anonymous"></script>
-    
+	<title>Leeya Thercy</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favison.png">
+	<meta name="author" content="Leeya Thercy">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://kit.fontawesome.com/61ab4246c2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<div id="header">
-    <div class = container>
-        <nav>
-            <img src = "images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div style="line-height: 160%;" class="header-text">
-            <h1>Hello, I'm <span>Leeya</span> </h1>
-            <p>Computer Science Major <br>
-                Business Administration Minor <br> 
-                Senior at Mississippi State University <br>
-                I aspire to use technology to create a <br> more positive and impactful change in the world <br>
-                </p>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a class="nav-item" href="#about">Leeya Thercy</a>
+			</div>
 
-                
-        </div>
-    </div>
-</div>
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about1">About</a>
+				<a class="nav-item" href="#portfolio">Projects</a>
+				<a class="nav-item" href="#contact">Contact</a>
+			</div>
 
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					I'm pursuing a Bachelor's in Computer Science with a minor in
+					Business Administration, and I'm actively engaged in my community.
+					My goal is to use technology to drive positive and impactful change.
+				</p>
+			</div>
+		</section>
 
+		<div id="about1">
+			<div class="container">
+				<div class ="row">
+					<div class="about-col-2">
+						<h1 class="sub-title">Education & Skills</h1>
+						<p> Throughout my academic journey,
+							I've mastered various programming languages and
+							gained practical experience with agile, Git, RedHat Linux,
+							and Google Cloud Platform. I thrive in collaborative teamwork and
+							enjoy turning challenges into solutions.</p>
 
-<!-----------------About------------------!>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('education')">Education</p>
+							<p class="tab-links" onclick="opentab('skills')">Skills</p>
+						</div>
+						<div class="tab-contents active-tab" id="education">
+							<ul>
+								<li>University of Southern Mississippi | 2019-2020</li>
+								<li>Mississippi State University | 2020- December 2023 </li>
+								<li>Dean's List | 2023</li>
+								<li>Cumulative GPA: 3.3/4</li>
 
-<div id="about1">
-    <div class="container">
-        <div class ="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Education & Skills</h1>
-                <p> Throughout my academic journey, 
-                    I've mastered various programming languages and 
-                    gained practical experience with agile, Git, RedHat Linux, 
-                    and Google Cloud Platform. I thrive in collaborative teamwork and 
-                    enjoy turning challenges into solutions.</p>
+							</ul>
+						</div>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                </div>
-                <div class="tab-contents active-tab" id="education">
-                    <ul>
-                        <li><span>2019-2020</span><br>University of Southern Mississippi</li>
-                        <li><span>2020-December 2023</span><br>Mississippi State University <br>GPA 3.27/4</li>
-                        <li><span>2023</span><br>Dean's List</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>Python </span><br>Data Analysis & Complex Problem Solving</li>
-                        <li><span>Object Oriented Programming </span><br>Organizing Code for Maximum Reusability</li>
-                        <li><span>C/C++</span><br>Data Analysis & Complex Problem Solving</li>
-                        <li><span>JavaScript </span><br> Along with HTML & CSS,
-                            I am able <br> to design Web/App interfaces</li>
-                        <li><span>SQL </span><br>Data Analysis & Complex Problem Solving</li>
-        
-                    </ul>
-                </div>
-                
-        </div>
-    </div>
-</div>
-</body>
+						<div class="tab-contents" id="skills">
+							<ul>
+								<li><span>Python </span><br></li>
+								<li><span>SQL </span><br></li>
+								<li><span>C/C++</span><br></li>
+								<li><span>JavaScript </span><br> </li>
+								<li><span>Object Oriented Programming </span></li>
 
 
+							</ul>
+						</div>
 
-<!-------------portfolio-------------!>
+					</div>
+				</div>
+			</div>
 
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Photo Recognition</h3>
-                    <p>Trained AI model on MINST dataset to recognize photos and generate new ones. <br> </p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>E-Commerce Store</h3>
-                    <p>Coming Soon! <br> For now, some extra words to fill the space.</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Battle Snake</h3>
-                    <p>Developed a battle snake using adversarial algorithms <br> </p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="https://github.com/leeyat1" class="btn">See More</a>
-    </div>
-</div>
+			<!-------------portfolio-------------!>
 
-<!--------------contact---------------!>
+			<div id="portfolio">
+				<div class="container">
+					<h1 class="sub-title">My Projects</h1>
+					<div class="work-list">
+						<div class="work">
+							<img src="images/work-1.png">
+							<div class="layer">
+								<h3>Photo Recognition</h3>
+								<p>Trained an AI model on the MNIST dataset to recognize and generate images,
+									emphasizing my capabilities in handling large datasets. </p>
+								<a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="images/work-2.png">
+							<div class="layer">
+								<h3>Spotify API Automation </h3>
+								<p> Saved Weekly <br> This saves your weekly Spotify Discover playlists,
+									extending their lifespan into a single, everlasting collection.</p>
+								<a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="images/work-3.png">
+							<div class="layer">
+								<h3>Immigration Selection System</h3>
+								<p>Designed a C++ program for immigration criteria in a fantasy country,
+									utilizing graphs and trees for efficient data handling.
+									Also, conducted a comprehensive analysis and resolution of ethical concerns
+									related to immigration standards.</p>
+								<a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+							</div>
+						</div>
+					</div>
+					<a href="https://github.com/leeyat1" class="btn">See More</a>
+				</div>
+			</div>
 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>  LeeyaThercy1@gmail.com</p>
-                <p><i class="fa-sharp fa-solid fa-square-phone"></i>  (769)-230-6112</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/leeyathercy/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/leeyat1"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://open.spotify.com/playlist/2ZzL2cqeb1gAV6wm1EbNWU"><i class="fa-brands fa-spotify"></i></a>
-                </div>
-                <a href="images/Leeya'sResume.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<script src="app.js"> </script>
-
-
-
+		<!-- Social -->
+			<div id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="contact-left">
+							<h1 class="sub-title">Contact Me</h1>
+							<p><i class="fa-sharp fa-solid fa-paper-plane"></i>  LeeyaThercy1@gmail.com</p>
+							<p><i class="fa-sharp fa-solid fa-square-phone"></i>  (769)-230-6112</p>
+							<div class="social-icons">
+								<a href="https://www.linkedin.com/in/leeyathercy/"><i class="fa-brands fa-linkedin"></i></a>
+								<a href="https://github.com/leeyat1"><i class="fa-brands fa-github"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="https://open.spotify.com/playlist/2ZzL2cqeb1gAV6wm1EbNWU"><i class="fa-brands fa-spotify"></i></a>
+							</div>
+							<a href="images/Leeya'sResume.pdf" download class="btn btn2">Download Resume</a>
+						</div>
+						<div class="contact-right">
+							<form name="submit-to-google-sheet">
+								<input type="text" name="Name" placeholder="Your Name" required>
+								<input type="email" name="email" placeholder="Your Email" required>
+								<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+								<button type="submit" class="btn btn2">Submit</button>
+							</form>
+							<span id="msg"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a href="">Leeya Thercy</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
 </html>
