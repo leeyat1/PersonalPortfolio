@@ -1,5 +1,5 @@
 *{
-	font-family: 'Gotham',sans-serif;
+	font-family: ;
 }
 
 html, body{
@@ -8,6 +8,7 @@ html, body{
 	background-color: #1f2123;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	
 }
 
 
@@ -262,11 +263,16 @@ a.nav-item:hover {
 	height: 100%;
 }
 
+.space{
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
 /*-------------Contact Me--------------*/
 
 #contact{
-	padding-top: 30px;
-	padding: 40px;
+	padding-top: auto;
+	padding: auto;
 }
 
 .contact-left{
